@@ -1,0 +1,220 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/petersandford/Desktop/developer-hub',
+5 verbose install   [ 'gulp',
+5 verbose install     'browser-sync',
+5 verbose install     'gulp-autoprefixer',
+5 verbose install     'bower',
+5 verbose install     'delete',
+5 verbose install     'gulp-gh-pages',
+5 verbose install     'gulp-util',
+5 verbose install     'minimist',
+5 verbose install     'gulp-rename',
+5 verbose install     'chai',
+5 verbose install     'chai-as-promised',
+5 verbose install     'run-sequence',
+5 verbose install     'widget-tester',
+5 verbose install     'gulp-sass',
+5 verbose install     'gulp-bower',
+5 verbose install     'connect-modrewrite' ] ]
+6 info preinstall developer-hub@1.0.0
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping gulp-gh-pages@0.4.0 /Users/petersandford/Desktop/developer-hub
+9 verbose already installed skipping gulp-util@3.0.1 /Users/petersandford/Desktop/developer-hub
+10 verbose already installed skipping minimist@1.1.0 /Users/petersandford/Desktop/developer-hub
+11 verbose already installed skipping gulp-rename@1.2.0 /Users/petersandford/Desktop/developer-hub
+12 verbose already installed skipping chai@^1.9.2 /Users/petersandford/Desktop/developer-hub
+13 verbose already installed skipping chai-as-promised@^4.1.1 /Users/petersandford/Desktop/developer-hub
+14 verbose already installed skipping run-sequence@^0.3.6 /Users/petersandford/Desktop/developer-hub
+15 verbose cache add [ 'widget-tester@git://github.com/Rise-Vision/widget-tester.git',
+15 verbose cache add   null ]
+16 verbose cache add name=undefined spec="widget-tester@git://github.com/Rise-Vision/widget-tester.git" args=["widget-tester@git://github.com/Rise-Vision/widget-tester.git",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'widget-tester@git://github.com/Rise-Vision/widget-tester.git',
+17 verbose parsed url   path: 'widget-tester@git://github.com/Rise-Vision/widget-tester.git',
+17 verbose parsed url   href: 'widget-tester@git://github.com/Rise-Vision/widget-tester.git' }
+18 verbose already installed skipping gulp-sass@~0.7.1 /Users/petersandford/Desktop/developer-hub
+19 verbose cache add name="widget-tester" spec="git://github.com/Rise-Vision/widget-tester.git" args=["widget-tester","git://github.com/Rise-Vision/widget-tester.git"]
+20 verbose parsed url { protocol: 'git:',
+20 verbose parsed url   slashes: true,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: 'github.com',
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: 'github.com',
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '/Rise-Vision/widget-tester.git',
+20 verbose parsed url   path: '/Rise-Vision/widget-tester.git',
+20 verbose parsed url   href: 'git://github.com/Rise-Vision/widget-tester.git' }
+21 verbose already installed skipping gulp-bower@0.0.7 /Users/petersandford/Desktop/developer-hub
+22 silly lockFile f2f35eae-om-Rise-Vision-widget-tester-git git://github.com/Rise-Vision/widget-tester.git
+23 verbose lock git://github.com/Rise-Vision/widget-tester.git /Users/petersandford/.npm/f2f35eae-om-Rise-Vision-widget-tester-git.lock
+24 verbose already installed skipping connect-modrewrite@0.7.11 /Users/petersandford/Desktop/developer-hub
+25 verbose already installed skipping bower@^1.3.12 /Users/petersandford/Desktop/developer-hub
+26 verbose already installed skipping gulp@^3.8.8 /Users/petersandford/Desktop/developer-hub
+27 verbose already installed skipping browser-sync@^1.3.7 /Users/petersandford/Desktop/developer-hub
+28 verbose already installed skipping gulp-autoprefixer@1.0.0 /Users/petersandford/Desktop/developer-hub
+29 verbose already installed skipping delete@^0.1.5 /Users/petersandford/Desktop/developer-hub
+30 verbose addRemoteGit [ 'git://github.com/Rise-Vision/widget-tester.git', 'master' ]
+31 verbose git remote.origin.url git://github.com/Rise-Vision/widget-tester.git
+32 verbose git fetch -a origin (git://github.com/Rise-Vision/widget-tester.git)
+33 verbose git rev-list -n1 master a1c3265dd2445b27be34dfdcd872ff05aeac12a8
+34 verbose resolved git url git://github.com/Rise-Vision/widget-tester.git#a1c3265dd2445b27be34dfdcd872ff05aeac12a8
+35 verbose tar unpack /var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz
+36 silly lockFile 30e0aef5--5877279751002789-tmp-tgz-unpack tar:///var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz-unpack
+37 verbose lock tar:///var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz-unpack /Users/petersandford/.npm/30e0aef5--5877279751002789-tmp-tgz-unpack.lock
+38 silly lockFile 7b3ff4bf-10665-0-5877279751002789-tmp-tgz tar:///var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz
+39 verbose lock tar:///var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz /Users/petersandford/.npm/7b3ff4bf-10665-0-5877279751002789-tmp-tgz.lock
+40 silly gunzTarPerm modes [ '755', '644' ]
+41 silly gunzTarPerm extractEntry
+42 silly gunzTarPerm modified mode [ '', 509, 493 ]
+43 silly gunzTarPerm extractEntry .gitignore
+44 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+45 silly gunzTarPerm extractEntry .jshintrc
+46 silly gunzTarPerm modified mode [ '.jshintrc', 436, 420 ]
+47 silly gunzTarPerm extractEntry README.md
+48 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+49 silly gunzTarPerm extractEntry bower.json
+50 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+51 silly gunzTarPerm extractEntry getIpAddress.js
+52 silly gunzTarPerm modified mode [ 'getIpAddress.js', 436, 420 ]
+53 silly gunzTarPerm extractEntry index.js
+54 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+55 silly gunzTarPerm extractEntry karma.conf.js
+56 silly gunzTarPerm modified mode [ 'karma.conf.js', 436, 420 ]
+57 silly gunzTarPerm extractEntry keys/
+58 silly gunzTarPerm modified mode [ 'keys/', 509, 493 ]
+59 silly gunzTarPerm extractEntry keys/certrequest.csr
+60 silly gunzTarPerm modified mode [ 'keys/certrequest.csr', 436, 420 ]
+61 silly gunzTarPerm extractEntry keys/https-cert.pem
+62 silly gunzTarPerm modified mode [ 'keys/https-cert.pem', 436, 420 ]
+63 silly gunzTarPerm extractEntry keys/https-key.pem
+64 silly gunzTarPerm modified mode [ 'keys/https-key.pem', 436, 420 ]
+65 silly gunzTarPerm extractEntry mocks/
+66 silly gunzTarPerm modified mode [ 'mocks/', 509, 493 ]
+67 silly gunzTarPerm extractEntry mocks/common-mock.js
+68 silly gunzTarPerm modified mode [ 'mocks/common-mock.js', 436, 420 ]
+69 silly gunzTarPerm extractEntry mocks/gadget-mocks.js
+70 silly gunzTarPerm modified mode [ 'mocks/gadget-mocks.js', 436, 420 ]
+71 silly gunzTarPerm extractEntry mocks/gadgets.io-mock.js
+72 silly gunzTarPerm modified mode [ 'mocks/gadgets.io-mock.js', 436, 420 ]
+73 silly gunzTarPerm extractEntry mocks/gapi-picker-mock.js
+74 silly gunzTarPerm modified mode [ 'mocks/gapi-picker-mock.js', 436, 420 ]
+75 silly gunzTarPerm extractEntry mocks/geolocation-mock.js
+76 silly gunzTarPerm modified mode [ 'mocks/geolocation-mock.js', 436, 420 ]
+77 silly gunzTarPerm extractEntry mocks/i18n-config.js
+78 silly gunzTarPerm modified mode [ 'mocks/i18n-config.js', 436, 420 ]
+79 silly gunzTarPerm extractEntry mocks/rise-storage-mock.js
+80 silly gunzTarPerm modified mode [ 'mocks/rise-storage-mock.js', 436, 420 ]
+81 silly gunzTarPerm extractEntry mocks/segment-analytics-mock.js
+82 silly gunzTarPerm modified mode [ 'mocks/segment-analytics-mock.js', 436, 420 ]
+83 silly gunzTarPerm extractEntry mocks/spreadsheet-controls-http-mock.js
+84 silly gunzTarPerm modified mode [ 'mocks/spreadsheet-controls-http-mock.js', 436, 420 ]
+85 silly gunzTarPerm extractEntry mocks/visualization-api-mock.js
+86 silly gunzTarPerm modified mode [ 'mocks/visualization-api-mock.js', 436, 420 ]
+87 silly gunzTarPerm extractEntry package.json
+88 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+89 silly gunzTarPerm extractEntry protractor.conf.js
+90 silly gunzTarPerm modified mode [ 'protractor.conf.js', 436, 420 ]
+91 silly lockFile 30e0aef5--5877279751002789-tmp-tgz-unpack tar:///var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz-unpack
+92 silly lockFile 30e0aef5--5877279751002789-tmp-tgz-unpack tar:///var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz-unpack
+93 silly lockFile 7b3ff4bf-10665-0-5877279751002789-tmp-tgz tar:///var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz
+94 silly lockFile 7b3ff4bf-10665-0-5877279751002789-tmp-tgz tar:///var/folders/xl/9fpy4k6x7q32170fvhv0cn1c0000gn/T/npm-16961-Oj_69ImW/1434136210665-0.5877279751002789/tmp.tgz
+95 silly lockFile f2f35eae-om-Rise-Vision-widget-tester-git git://github.com/Rise-Vision/widget-tester.git
+96 silly lockFile f2f35eae-om-Rise-Vision-widget-tester-git git://github.com/Rise-Vision/widget-tester.git
+97 silly resolved [ { name: 'widget-tester',
+97 silly resolved     version: '0.1.0',
+97 silly resolved     description: 'Configuration, task & mocks related to widget testing.',
+97 silly resolved     main: 'index.js',
+97 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+97 silly resolved     repository:
+97 silly resolved      { type: 'git',
+97 silly resolved        url: 'https://github.com/Rise-Vision/widget-tester.git' },
+97 silly resolved     keywords: [ 'widget', 'testing' ],
+97 silly resolved     author: { name: 'Xiyang Chen', email: 'settinghead@gmail.com' },
+97 silly resolved     license: 'GPLv3',
+97 silly resolved     bugs: { url: 'https://github.com/Rise-Vision/widget-tester/issues' },
+97 silly resolved     homepage: 'https://github.com/Rise-Vision/widget-tester',
+97 silly resolved     dependencies:
+97 silly resolved      { async: '^0.9.0',
+97 silly resolved        casperjs: '^1.1.0-beta3',
+97 silly resolved        chai: '^1.9.1',
+97 silly resolved        'chai-as-promised': '^4.1.1',
+97 silly resolved        express: '^4.6.1',
+97 silly resolved        glob: '^4.0.4',
+97 silly resolved        gulp: '^3.8.6',
+97 silly resolved        'gulp-html-replace': '^1.1.0',
+97 silly resolved        'gulp-karma': '0.0.4',
+97 silly resolved        'gulp-protractor': '0.0.11',
+97 silly resolved        'gulp-rename': '^1.2.0',
+97 silly resolved        'gulp-util': '^2.2.20',
+97 silly resolved        'jasmine-node': '^1.14.5',
+97 silly resolved        'jasmine-reporters': '^2.0.1',
+97 silly resolved        'junit-xml-parser': '0.0.3',
+97 silly resolved        karma: '^0.12.17',
+97 silly resolved        'karma-chai': '^0.1.0',
+97 silly resolved        'karma-chai-plugins': '^0.2.1',
+97 silly resolved        'karma-coverage': '^0.2.4',
+97 silly resolved        'karma-junit-reporter': '^0.2.2',
+97 silly resolved        'karma-mocha': '^0.1.6',
+97 silly resolved        'karma-phantomjs-launcher': '^0.1.4',
+97 silly resolved        'karma-sinon-chai': '^0.2.0',
+97 silly resolved        lodash: '^2.4.1',
+97 silly resolved        mocha: '^1.20.1',
+97 silly resolved        'node-uuid': '^1.4.1',
+97 silly resolved        properties: '^1.2.1',
+97 silly resolved        'reporter-file': '0.0.1',
+97 silly resolved        'run-sequence': '^0.3.6',
+97 silly resolved        sinon: '^1.11.1',
+97 silly resolved        'sinon-chai': '^2.6.0',
+97 silly resolved        'spawn-cmd': '0.0.2',
+97 silly resolved        xml2js: '^0.4.4',
+97 silly resolved        'xunit-file': '0.0.5',
+97 silly resolved        yargs: '^1.3.1' },
+97 silly resolved     readme: '# Widget Tester\n\n## Introduction\n\nConfiguration, tasks, and mocks to be used for widget testing.\n\n### Available Tasks\n\n- Simple static server\n- E2E Tests with protractor\n- Angular E2E tests\n- Angular Unit Tests with Karma & Mocha\n- Jenkins Metrics\n\nWidget Tester works in conjunction with [Rise Vision](http://www.risevision.com), the [digital signage management application](http://rva.risevision.com/) that runs on [Google Cloud](https://cloud.google.com).\n\nAt this time Chrome is the only browser that this project and Rise Vision supports.\n\n## Built With\n- NPM (node package manager)\n- Bower\n- Karma, Mocha, Chai, Chai-As-Promised & Sinon-Chai for testing\n\n## Development\n\n### Local Development Environment Setup and Installation\n* install the latest Node.js and NPM version\n\n* clone the repo using Git to your local:\n```bash\ngit clone https://github.com/Rise-Vision/widget-tester.git\n```\n\n* cd into the repo directory\n```bash\ncd widget-tester\n```\n\n* from the root of the repo run this command to install all npm dependencies\n```bash\nnpm install\n```\n\n* install Bower globally using the NPM install cmd:\n```bash\nnpm install -g bower\n```\n\n* run Bower install to install all bower dependencies:\n```bash\nbower install\n```\n\n### How to enable Jenkins CI to collect metrics for a repository\n\nYou will need to make sure the following requirements are fulfilled:\n\n1. ####Each of your test types must produce a report file as reports/*-xunit.xml\n  - File must be placed under ```/reports``` (which should also be git-ignored)\n  - Reports must have the suffix ```-xunit.xml```\n  - This can be easily accomplished if you use factory in this repo to create a test task, which will automatically generate the report file for you.\n\n    For instance,\n  ```javascript\n  var factory = require("widget-factory").gulpTaskFactory;\n  gulp.task("test:e2e", factory.testE2E());\n  ```\n  Will define a gulp task that runs tests under ```test/e2e/*.js``` with CasperJS.\n\n2. ####A gulp task must be present that collects metrics and produces a Java properties file as ```reports/metrics.json.properties```\n   - Again, the easiest way to accomplish is to use the task factory:\n   ```javascript\n   var factory = require("widget-factory").gulpTaskFactory;\n   gulp.task("test:metrics", factory.metrics());\n   ```\n3. ####Each Jenkins task for the repository must incorporate the metrics task at the end of the original test process\n   - If your repository uses NPM script, append ```gulp metrics; ``` to the end of your "test" task\n   - If you have a gulp task called ```test``` that runs all available types of tests, modify it to one similar to the following:\n\n   ```javascript\n   var runSequence = require("run-sequence");\n   gulp.task("test", function (cb) {\n     runSequence("test:unit:ng",\n       "test:e2e:server", "test:e2e", "test:e2e:ng", "test:e2e:server-close",\n       "test:metrics", cb);\n   })\n\n   ```\n4. ####Your Jenkins task must use EnvInject plugin to inject ```reports/metrics.json.properties``` into the build context\n   1. In your task\'s config page, click "Add Build Step", then Inject Environment Variables\n   2. In the "Inject Environment Variables" block, enter ```reports/metrics.json.properties``` in the "Properties File Path" text box\n\n5. ###Your Jenkins task must add a note back to GitHub repo\n   1. Click "Add post-build action" => Git Publisher\n   2. Under "Git Publisher" block, click "Add Note"\n   3. Under the new note sub-block\n     - Set "note to push" to ```$CI_METRICS```\n     - Set "target remote name" to "origin" (or the one that matches your source code configuration. Click "Advance" button in your repository settings to see the name of your git remote)\n     - Set "note\'s namespace" to ```metrics-${GIT_BRANCH}-${BUILD_NUMBER}```\n\n### Dependencies\n* **Bower** - is used as a package manager for javascript libraries and frameworks. All third-party javascript frameworks and libraries are listed as dependencies in the bower.json file.\n* **NPM & Nodejs** - all the node dependencies are listed in the package.json file\n\n\n## Submitting Issues\nIf you encounter problems or find defects we really want to hear about them. If you could take the time to add them as issues to this Repository it would be most appreciated. When reporting issues please use the following format where applicable:\n\n**Reproduction Steps**\n\n1. did this\n2. then that\n3. followed by this (screenshots / video captures always help)\n\n**Expected Results**\n\nWhat you expected to happen.\n\n**Actual Results**\n\nWhat actually happened. (screenshots / video captures always help)\n\n## Contributing\nAll contributions are greatly appreciated and welcome! If you would first like to sound out your contribution ideas please post your thoughts to our [community](http://community.risevision.com), otherwise submit a pull request and we will do our best to incorporate it\n\n## Resources\nIf you have any questions or problems please don\'t hesitate to join our lively and responsive community at http://community.risevision.com.\n\nIf you are looking for user documentation on Rise Vision please see http://www.risevision.com/help/users/\n\nIf you would like more information on developing applications for Rise Vision please visit http://www.risevision.com/help/developers/.\n\n**Facilitator**\n\n[Stuart Lees](https://github.com/stulees "Stuart Lees")\n',
+97 silly resolved     readmeFilename: 'README.md',
+97 silly resolved     _id: 'widget-tester@0.1.0',
+97 silly resolved     _shasum: 'eda2868846f90d4245565a87ca9c6598c39b4598',
+97 silly resolved     _resolved: 'git://github.com/Rise-Vision/widget-tester.git#a1c3265dd2445b27be34dfdcd872ff05aeac12a8',
+97 silly resolved     _from: 'widget-tester@git://github.com/Rise-Vision/widget-tester.git' } ]
+98 info install widget-tester@0.1.0 into /Users/petersandford/Desktop/developer-hub
+99 info installOne widget-tester@0.1.0
+100 info /Users/petersandford/Desktop/developer-hub/node_modules/widget-tester unbuild
+101 info preuninstall widget-tester@0.1.0
+102 info uninstall widget-tester@0.1.0
+103 verbose true,/Users/petersandford/Desktop/developer-hub/node_modules,/Users/petersandford/Desktop/developer-hub/node_modules unbuild widget-tester@0.1.0
+104 info postuninstall widget-tester@0.1.0
+105 info /Users/petersandford/Desktop/developer-hub/node_modules/widget-tester unbuild
+106 error error rolling back Error: EACCES, unlink '/Users/petersandford/Desktop/developer-hub/node_modules/widget-tester/node_modules/.bin/_mocha'
+106 error error rolling back  widget-tester@0.1.0 { [Error: EACCES, unlink '/Users/petersandford/Desktop/developer-hub/node_modules/widget-tester/node_modules/.bin/_mocha']
+106 error error rolling back   errno: 3,
+106 error error rolling back   code: 'EACCES',
+106 error error rolling back   path: '/Users/petersandford/Desktop/developer-hub/node_modules/widget-tester/node_modules/.bin/_mocha' }
+107 error Error: EACCES, unlink '/Users/petersandford/Desktop/developer-hub/node_modules/widget-tester/node_modules/.bin/_mocha'
+107 error  { [Error: EACCES, unlink '/Users/petersandford/Desktop/developer-hub/node_modules/widget-tester/node_modules/.bin/_mocha']
+107 error   errno: 3,
+107 error   code: 'EACCES',
+107 error   path: '/Users/petersandford/Desktop/developer-hub/node_modules/widget-tester/node_modules/.bin/_mocha' }
+108 error Please try running this command again as root/Administrator.
+109 error System Darwin 14.0.0
+110 error command "node" "/usr/local/bin/npm" "install"
+111 error cwd /Users/petersandford/Desktop/developer-hub/web
+112 error node -v v0.10.29
+113 error npm -v 1.4.14
+114 error path /Users/petersandford/Desktop/developer-hub/node_modules/widget-tester/node_modules/.bin/_mocha
+115 error code EACCES
+116 error errno 3
+117 error stack Error: EACCES, unlink '/Users/petersandford/Desktop/developer-hub/node_modules/widget-tester/node_modules/.bin/_mocha'
+118 verbose exit [ 3, true ]

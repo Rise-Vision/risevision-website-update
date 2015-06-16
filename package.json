@@ -1,0 +1,39 @@
+{
+    "name": "developer-hub",
+    "version": "1.0.0",
+    "description": "RiseVision Developer Hub",
+    "main": "gulpfile.js",
+    "scripts": {
+        "ci-build": "gulp build",
+        "ci-deploy": "gulp deploy --clean",
+        "test": "echo disabled"
+    },
+    "author": "rodrigopavezi <rodrigopavezi@gmail.com>",
+    "license": "GNU",
+    "devDependencies": {
+        "gulp": "^3.8.8",
+        "browser-sync": "^1.3.7",
+        "gulp-autoprefixer": "1.0.0",
+        "bower": "^1.3.12",
+        "delete": "^0.1.5",
+        "gulp-gh-pages": "0.4.0",
+        "gulp-util": "3.0.1",
+        "minimist": "1.1.0",
+        "gulp-rename": "1.2.0",
+        "chai": "^1.9.2",
+        "chai-as-promised": "^4.1.1",
+        "run-sequence": "^0.3.6",
+        "widget-tester": "git://github.com/Rise-Vision/widget-tester.git",
+        "gulp-sass": "~0.7.1",
+        "gulp-bower": "0.0.7",
+        "connect-modrewrite": "0.7.11"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Rise-Vision/developer-hub.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Rise-Vision/developer-hub/issues"
+    },
+    "homepage": "https://github.com/Rise-Vision/developer-hub"
+}

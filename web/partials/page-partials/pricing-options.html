@@ -1,0 +1,137 @@
+<div ng-init="offers = [{
+      label:'Displays',
+      free:'Unlimited',
+      premium:'Unlimited',
+      price:'',
+      premiumLink:'',
+      premiumButton:'',
+      freeButton:''
+      },
+      {
+      label:'Users',
+      free:'Unlimited',
+      premium:'Unlimited',
+      price:'',
+      premiumLink:'',
+      premiumButton:'',
+      freeButton:''
+      },
+      {
+      label:'Media Storage',
+      free:'Host media on your servers.',
+      premium:'Host media on Rise Storage.',
+      price:'$10 per month.',
+      premiumLink:'https://storage.risevision.com/',
+      premiumButton:'Buy',
+      premiumButtonClass:'storage',
+      freeButton:''
+      },
+      {
+      label:'Content Widgets',
+      free:'Text, Image, Video, HTML, Spreadsheet, RSS and more...',
+      premium:'Licensed News, Weather, Sports, Stocks and more...',
+      price:'',
+      freeLink:'https://store.risevision.com/',
+      premiumLink:'https://store.risevision.com/',
+      premiumButton:'Browse',
+      freeButton:'Browse'
+      },
+      {
+      label:'Training',
+      free:'Getting Started Webinar',
+      premium:'Private One-On-One Training',
+      price:'',
+      freeLink:'webinars.html',
+      premiumLink:'https://store.risevision.com/',
+      premiumButton:'Browse',
+      freeButton:'Sign Up'
+      },
+      {
+      label:'Support',
+      free:'User Community',
+      premium:'Priority Support',
+      price:'',
+      freeLink:'https://community.risevision.com/',
+      premiumLink:'https://support.risevision.com/',
+      premiumButton:'Buy',
+      premiumButtonClass:'support',
+      freeButton:'Join',
+      freeButtonClass:'community'
+      },
+      {
+      label:'Content Design',
+      free:'Templates to get started.',
+      premium:'Graphic & Web Design',
+      price:'',
+      premiumLink:'https://store.risevision.com/',
+      premiumButton:'Browse',
+      freeButton:''
+      }
+      ]">
+    </div>
+
+<div class="row pricing">
+  <div class="col-sm-5 col-sm-offset-2">
+    <div class="offer-header">
+      <h3 class="visible-xs">Free</h3> 
+      <h3 class="hidden-xs">Free</h3>
+      <p>Free? Really? Yes, no bait and switch, you can use our digital signage platform for nothing, but you will need to host your own video and image files.</p>  
+    </div><!--content-box--> 
+        <div class="visible-xs">
+          <div ng-repeat="offer in offers" ng-class="{'last':$last}">
+            <div class="offer-box">
+              <h4>{{offer.label}}</h4>
+              <p>{{offer.free}}</p>
+              <span class="offer-action" ng-if="offer.freeLink">
+                <a class="btn btn-primary" target="new" href="{{offer.freeLink}}"><span style="background-image: url('logos/icon-{{offer.freeButtonClass}}.png')" class="icon-{{offer.freeButtonClass}}"></span>{{offer.freeButton}}</a>
+              </span>
+            </div><!--offer-box-->
+          </div>
+        </div> 
+      </div><!--col-->
+      <div class="col-sm-5">
+        <div class="offer-header premium">
+            <div class="premium-badge"></div>
+            <h3 class="visible-xs">Premium <span>(How we make money)</span></h3>  
+            <h3 class="hidden-xs">Premium</h3> 
+            
+            <p>How do we make money? We sell optional Premium products and services and we want you to buy licensed content, media players, and anything else digital signage that you might need from our Store. That's how we keep the lights on.</p>
+        </div><!--content-box-->
+        <div class="visible-xs">
+          <div ng-repeat="offer in offers" ng-class="{'last':$last}">
+            <div class="offer-box premium">
+              <h4>{{offer.label}}</h4>
+              <p>{{offer.premium}} <span>{{offer.price}}</span></p>
+              <span class="offer-action" ng-if="offer.premiumLink">
+                <a class="btn btn-primary" target="new" href="{{offer.premiumLink}}"><span style="background-image: url('logos/icon-{{offer.premiumButtonClass}}.png')" class="icon-{{offer.premiumButtonClass}}"></span>{{offer.premiumButton}}</a>
+              </span>
+            </div><!--offer-box-->
+          </div>
+        </div>
+      </div><!--col-->
+      
+    </div><!--row-->
+
+    <div class="row pricing hidden-xs" ng-repeat="offer in offers" ng-class="{'last':$last}">
+      <div class="col-sm-2"><h4>{{offer.label}}</h4></div>
+      <div class="col-sm-5">
+        <div class="offer-box" vertilize>
+          <span class="offer-spacing" ng-if="!offer.freeLink"></span>
+          <p>{{offer.free}}</p>
+          <span class="offer-action" ng-if="offer.freeLink">
+            <a class="btn btn-primary" target="new" href="{{offer.freeLink}}"><span style="background-image: url('logos/icon-{{offer.freeButtonClass}}.png')" class="icon-{{offer.freeButtonClass}}"></span>{{offer.freeButton}}</a>
+          </span>
+        </div><!--offer-box-->
+      </div>
+      <div class="col-sm-5">
+        <div class="offer-box premium" vertilize>
+          <span class="offer-spacing" ng-if="!offer.premiumLink"></span>
+          <p>{{offer.premium}} <span>{{offer.price}}</span></p>
+
+          <span class="offer-action" ng-if="offer.premiumLink">
+            <a class="btn btn-primary" target="new" href="{{offer.premiumLink}}"><span style="background-image: url('logos/icon-{{offer.premiumButtonClass}}.png')" class="icon-{{offer.premiumButtonClass}}"></span>{{offer.premiumButton}}</a>
+          </span>
+          
+        </div><!--offer-box-->
+      </div>
+    </div>
