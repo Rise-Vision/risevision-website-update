@@ -1,0 +1,82 @@
+
+
+  <div>
+  <!-- Header Nav -->
+
+  <!-- <div ng-init="navs = [{
+    url:'pricing.html',
+    label:'Pricing'
+    },
+    {
+    url:'webinars.html',
+    label:'Webinars'
+    },
+    {
+    url:'blog.html',
+    label:'Blog'
+    }
+    ]">
+  </div>
+
+  <div ng-init="webinars = [{
+    subject:'List Of Upcoming Webinars'
+    }
+  ]">
+  </div> -->
+
+  <!-- Main View -->
+ <!--  <div ng-include="'../../partials/common-header.html'" scope="" onload=""></div> -->
+
+  <div class="page-header webinar-header">
+    <div class="container">
+      <h2 class="green-line">Webinars</h2><br>
+      <div class="image"><img src="logos/ryan.jpg"></div>
+      <p>Join the Getting Started with Rise Vision live webinar hosted and presented by Ryan Cahoy. Ryan is a Founder and Evangelist for Rise Vision, an industry renowned digital signage expert, and an often quoted public speaker. Ryan has over 20 years of digital signage experience and you shouldn’t miss this opportunity to both learn about Rise Vision and take advantage of the live Q&A session with him.</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="container">
+
+    <h3>Upcoming Webinars</h3>
+    <div ng-controller="WebinarCtrl">
+      <div class="content-box" style="margin-bottom:32px" ng-repeat="webinar in webinars">
+        <div class="content-box-body">
+          <div class="row">
+            <div class="col-sm-8">
+              <h3>{{webinar.subject}}</h3>
+              <p>{{webinar.description}}</p>
+              
+            </div>
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4>Start Time</h4>
+              <p style="font-size:13px"><span class="add-right">2015-06-11T00:00:00Z</span></p> 
+                </div>
+                <div class="col-sm-6">
+                  <h4>End Time</h4>
+              <p style="font-size:13px"><span>2015-06-11T01:00:00Z</span></p>
+                </div>
+              </div>
+              
+              
+              <a class="btn btn-primary btn-block btn-hg" href="{{webinar.registrationUrl}}">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--webinar-list-->
+    </div><!--ng-controller-->
+    <hr>
+    <div class="home-features">
+      <div class="container" vertilize-container>
+        <div ng-include="'partials/webinar-boxes.html'" scope="" onload=""></div>              
+      </div><!--container-->
+    </div><!--home-features--> 
+  </div><!--page content-->
+
+  <div ng-include="'partials/page-partials/footer.html'" scope="" onload=""></div>
+
+
+</div>
