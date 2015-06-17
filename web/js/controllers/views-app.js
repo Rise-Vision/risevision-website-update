@@ -1,6 +1,6 @@
 'use strict';
 
-var RisevisionWebsite = angular.module("risevision.website", [
+var MockupsApp = angular.module('MockupsApp', [
   'ngRoute',
   'ngTouch',
   'ui.router',
@@ -9,51 +9,43 @@ var RisevisionWebsite = angular.module("risevision.website", [
   'angular-flexslider'
 ]);
 
+angular.module('risevision.website')
 
-// var MockupsApp = angular.module('risevision.website', [
-//   'ngRoute',
-//   'ngTouch',
-//   'ui.router',
-//   'ui.bootstrap',
-//   'risevision.website.directives',
-//   'angular-flexslider'
-// ]);
+// .controller('TabsDemoCtrl', function ($scope, $window) {
+//   $scope.tabs = [
+//     { title:'Dynamic Title 1', content:'Dynamic content 1' },
+//     { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
+//   ];
 
-  RisevisionWebsite.controller('TabsDemoCtrl', function ($scope, $window) {
-  $scope.tabs = [
-    { title:'Dynamic Title 1', content:'Dynamic content 1' },
-    { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
-  ];
+//   $scope.alertMe = function() {
+//     setTimeout(function() {
+//       $window.alert('You\'ve selected the alert tab!');
+//     });
+//   };
+// })
 
-  $scope.alertMe = function() {
-    setTimeout(function() {
-      $window.alert('You\'ve selected the alert tab!');
-    });
-  };
-});
-
-  RisevisionWebsite.controller('MultipleSlidersCtrl', function ($scope) {
-  $scope.slideshows = [
-  [
-    'logos/image32.jpg',
-    'logos/image3.jpg',
-    'logos/image4.jpg',
-    'logos/image5.jpg'
-    ]
-  ];
-});
+//   RisevisionWebsite.controller('MultipleSlidersCtrl', function ($scope) {
+//   $scope.slideshows = [
+//   [
+//     'logos/image32.jpg',
+//     'logos/image3.jpg',
+//     'logos/image4.jpg',
+//     'logos/image5.jpg'
+//     ]
+//   ];
+// });
 
 
-RisevisionWebsite.controller('WebinarCtrl', ['$scope', '$http', function($scope, $http) {
-  $http.get('js/webinar.json')
-    .then(function(req) {
-    $scope.webinars = req.data;
-  })
-}]);
+// RisevisionWebsite.controller('WebinarCtrl', ['$scope', '$http', function($scope, $http) {
+//   $http.get('js/webinar.json')
+//     .then(function(req) {
+//     $scope.webinars = req.data;
+//   })
+// }]);
 
 
 // Vertilize Container
-  RisevisionWebsite.directive('vertilizeContainer', [
+ .directive('vertilizeContainer', [
     function(){
       return {
         restrict: 'EA',
@@ -94,10 +86,10 @@ RisevisionWebsite.controller('WebinarCtrl', ['$scope', '$http', function($scope,
         ]
       };
     }
-  ]);
+  ])
 
   // Vertilize Item
-    RisevisionWebsite.directive('vertilize', [
+   .directive('vertilize', [
     function(){
       return {
         restrict: 'EA',
@@ -140,57 +132,57 @@ RisevisionWebsite.controller('WebinarCtrl', ['$scope', '$http', function($scope,
         }
       };
     }
-  ]);
+  ])
 
 
-RisevisionWebsite.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+// RisevisionWebsite.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
-  $scope.items = ['item1', 'item2', 'item3'];
+//   $scope.items = ['item1', 'item2', 'item3'];
 
-  $scope.animationsEnabled = true;
+//   $scope.animationsEnabled = true;
 
-  $scope.open = function (size, template) {
+//   $scope.open = function (size, template) {
 
-    var modalInstance = $modal.open({
-      animation: $scope.animationsEnabled,
-      templateUrl: template,
-      controller: 'ModalInstanceCtrl',
-      size: size,
-      resolve: {
-        items: function () {
-          return $scope.items;
-        }
-      }
-    });
+//     var modalInstance = $modal.open({
+//       animation: $scope.animationsEnabled,
+//       templateUrl: template,
+//       controller: 'ModalInstanceCtrl',
+//       size: size,
+//       resolve: {
+//         items: function () {
+//           return $scope.items;
+//         }
+//       }
+//     });
 
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
+//     modalInstance.result.then(function (selectedItem) {
+//       $scope.selected = selectedItem;
+//     }, function () {
+//       $log.info('Modal dismissed at: ' + new Date());
+//     });
+//   };
 
-  $scope.toggleAnimation = function () {
-    $scope.animationsEnabled = !$scope.animationsEnabled;
-  };
+//   $scope.toggleAnimation = function () {
+//     $scope.animationsEnabled = !$scope.animationsEnabled;
+//   };
 
-});
+// });
 
-// Please note that $modalInstance represents a modal window (instance) dependency.
-// It is not the same as the $modal service used above.
+// // Please note that $modalInstance represents a modal window (instance) dependency.
+// // It is not the same as the $modal service used above.
 
-RisevisionWebsite.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+// RisevisionWebsite.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
 
-  $scope.items = items;
-  $scope.selected = {
-    item: $scope.items[0]
-  };
+//   $scope.items = items;
+//   $scope.selected = {
+//     item: $scope.items[0]
+//   };
 
-  $scope.ok = function () {
-    $modalInstance.close($scope.selected.item);
-  };
+//   $scope.ok = function () {
+//     $modalInstance.close($scope.selected.item);
+//   };
 
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
-});
+//   $scope.cancel = function () {
+//     $modalInstance.dismiss('cancel');
+//   };
+// });

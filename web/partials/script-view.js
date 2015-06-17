@@ -13,11 +13,11 @@
    
     $(window).load(function() {
 
-     setTimeout(function(){
-    odometer.innerHTML = 57397;
-    odometer2.innerHTML = 93;
-    odometer3.innerHTML = 120;
-    }, 400);
+    //  setTimeout(function(){
+    // odometer.innerHTML = 57397;
+    // odometer2.innerHTML = 93;
+    // odometer3.innerHTML = 120;
+    // }, 400);
 
     // The slider being synced must be initialized first
     $('#carousel').flexslider({
