@@ -1,13 +1,13 @@
 'use strict';
 
-var MockupsApp = angular.module('MockupsApp', [
-  'ngRoute',
-  'ngTouch',
-  'ui.router',
-  'ui.bootstrap',
-  'risevision.website.directives',
-  'angular-flexslider'
-]);
+// var MockupsApp = angular.module('MockupsApp', [
+//   'ngRoute',
+//   'ngTouch',
+//   'ui.router',
+//   'ui.bootstrap',
+//   'risevision.website.directives',
+//   'angular-flexslider'
+// ]);
 
 angular.module('risevision.website')
 
