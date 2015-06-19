@@ -1,4 +1,6 @@
-angular.module('risevision.website')
+'use strict';
+
+angular.module('risevision.website.controllers')
 
 .controller('MultipleSlidersCtrl', function ($scope) {
   $scope.slideshows = [
