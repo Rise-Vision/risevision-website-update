@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('risevision.website.directives')
+angular.module('risevision.website')
 
 .directive('vertilizeContainer', [
     function(){

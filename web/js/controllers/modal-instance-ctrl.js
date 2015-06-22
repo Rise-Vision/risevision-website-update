@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('risevision.website.controllers')
+angular.module('risevision.website')
 
 .controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
 
