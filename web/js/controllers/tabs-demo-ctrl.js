@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('risevision.website.controllers')
+angular.module('risevision.website')
 
 .controller('TabsDemoCtrl', function ($scope, $window) {
   $scope.tabs = [
