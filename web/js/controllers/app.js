@@ -1,5 +1,5 @@
 "use strict";
-angular.module("risevision.website", ["ui.router", "risevision.common.header", "ui.bootstrap","ui.bootstrap.tpls", "risevision.common.loading"])
+angular.module("risevision.website", ["ui.odometer", "risevision.common.header", "ui.bootstrap","ui.bootstrap.tpls", "ui.router", "risevision.common.loading"])
 
     .controller("CommonHeaderNavbarController", function($rootScope,$scope,$state) {
         $rootScope.navOptions = [{
@@ -21,13 +21,13 @@ angular.module("risevision.website", ["ui.router", "risevision.common.header", "
         
         $locationProvider.html5Mode(true);
 
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/');
     
         $stateProvider
         
             // HOME PAGE
             .state('home', {
-                url: '/home',
+                url: '/',
                 templateUrl: 'partials/home-view.html',
                 controller: 'ModalDemoCtrl'
             })
