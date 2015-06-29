@@ -16,16 +16,14 @@
     "angular-sanitize": "~1.3.14",
     "rv-common-svg": "https://github.com/Rise-Vision/common-svg.git",
     "jquery": "~1.11.2",
-    "rv-common-style": "https://github.com/Rise-Vision/common-style.git#master",
+    "rv-common-style": "git://github.com/Rise-Vision/common-style#~1.2.4",
     "rise-vision-common-header": "https://github.com/Rise-Vision/common-header.git#v1.3.5",
     "angular-ui-flow-manager": "https://github.com/Rise-Vision/angular-ui-flow-manager.git",
     "angular-ui-router": "0.2.11",
     "angular-bootstrap": "0.12.1",
     "angular-flexslider": "1.3.2"
   },
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "resolutions": {
     "jquery": "~1.11.2",
     "angular": "~1.3.14",
