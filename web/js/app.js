@@ -1,5 +1,5 @@
 "use strict";
-angular.module("risevision.website",["ui.router","risevision.common.header","ui.bootstrap","ui.bootstrap.tpls","risevision.common.loading"])
+angular.module("risevision.website",["ui.router","risevision.common.header","risevision.common.svg","ui.bootstrap","ui.bootstrap.tpls","ui-odometer","risevision.common.loading"])
 
     .controller("CommonHeaderNavbarController", function($rootScope,$scope,$state) {
         $rootScope.navOptions = [{
