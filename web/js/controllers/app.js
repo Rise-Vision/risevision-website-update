@@ -28,8 +28,8 @@ angular.module("risevision.website", ["ui.odometer", "risevision.common.header",
             // HOME PAGE
             .state('home', {
                 url: '/',
-                templateUrl: 'partials/home-view.html',
-                controller: 'ModalDemoCtrl'
+                templateUrl: 'partials/home-view.html'
+                // controller: 'ModalDemoCtrl'
             })
 
             // ABOUT PAGE
@@ -50,5 +50,19 @@ angular.module("risevision.website", ["ui.odometer", "risevision.common.header",
                 templateUrl: 'partials/webinars-view.html',
                 controller: 'WebinarCtrl'
             })
+
+            // CONTACT PAGE
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'partials/contact-view.html'
+            })
+
+            // SELLERS PAGE
+            .state('sellers', {
+                url: '/sellers',
+                templateUrl: 'partials/sellers-view.html',
+                controller: 'ModalDemoCtrl'
+            })
+
         });
     
