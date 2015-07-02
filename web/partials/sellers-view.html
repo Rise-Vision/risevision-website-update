@@ -1,0 +1,108 @@
+
+  <div class="website">
+    <div class="page-header">
+      <div class="container">
+        <h2 class="green-line">Selling Your Product In The Store</h2>
+      </div>
+    </div>
+
+    <div class="page-content">
+
+      <div class="container">   
+        <p>Our audience of digital signage users (your potential customers) is large and growing rapidly. How rapidly? As of this moment, we have 57,397 network accounts, 93 of which were added just yesterday, and we have active displays in 118 countries around the world.</p>
+        <p>Our <a href="https://store.risevision.com">Store</a> makes your digital signage products and services available to our growing userbase and we pay you 80% of the transaction for everything that you sell. It’s that simple.</p>
+      </div><!--container-->
+
+
+      <div class="home-features">
+          <div class="container" vertilize-container>
+
+                <h3>What’s For Sale</h3>
+
+                <div ng-include="'partials/seller-boxes.html'" scope="" onload=""></div>
+
+                <p>Whether users are looking for apps, hardware, content widgets, or help to deploy and manage their network, the <a href="https://store.risevision.com">Store</a> is the first place Rise Vision users go to find products and services for their displays.</p>
+
+                <p>We encourage you to browse the <a href="https://store.risevision.com">Store</a> to see the complete range of offerings, and to interact with our users in the <a href="https://community.risevision.com/">Community</a> to understand their needs and get feedback on your products.</p>
+        <p>Creating custom content or applications with our public API’s and open source code? Be sure to visit our <a href="https://developer.risevision.com/">developer resources</a> before you get started.</p>
+                        
+                
+            </div><!--container-->
+      </div><!--home-features--> 
+      <div class="fade-top">
+        <div class="container" ng-controller="ModalDemoCtrl">
+        <h2>List Your Product</h2>
+        <p>Tell us about the products and services that you’d like to sell to our digital signage users. We’ll review your application, and if approved, we’ll work with you one-on-one to get your products listed.</p>
+
+        <p>We take care of all the administrative overhead and pay you monthly for everything that you sell. Simple!</p>
+
+        <a href="#" class="btn btn-hg btn-primary" ng-click="open('lg','myModalContent2.html')">Apply Now! <i class="fa fa-chevron-circle-right icon-right"></i></a>
+
+        </div><!--container-->
+      </div><!--fade-top-->
+
+    </div><!--page-content-->
+
+
+    <div ng-controller="ModalDemoCtrl">
+      <script type="text/ng-template" id="myModalContent2.html">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="cancel()">
+          <i class="fa fa-times fa-lg"></i>
+        </button>
+        <h2 class="modal-title">Apply To Sell Your Products</h2>
+      </div>
+      <div class="modal-body">
+        <p>Answer a few questions below to get the ball rolling. Upon receiving we’ll review and follow up to discuss the specifics and work one-on-one with you to get your products listed in the Store and generating sales!</p>
+        <form>
+          <h3>Tell us about your Company.</h3>
+          <div class="form-group">
+            <label>Company Name *</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+          </div>
+          <div class="form-group">
+            <label>Website *</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+          </div>
+          
+          <h3>Tell us what you’d like to sell.</h3>
+          <p>A general description of the products that you'd like to sell along with any links to additional information, specifications, etc.</p>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          
+          <h3>Who should we follow up with?</h3>
+                <div class="form-group">
+                  <label>Name *</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label>Email *</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label>Phone *</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                </div>
+
+                <div class="text-right">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>  
+              </form>
+
+
+          </div>
+          <div class="modal-footer hidden">
+              <button class="btn btn-primary" ng-click="ok()">OK</button>
+              <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+          </div>
+      </script>
+    </div>
+
+
+
+
+
+    <div ng-include="'../../partials/footer.html'" scope="" onload=""></div>
+  </div>
