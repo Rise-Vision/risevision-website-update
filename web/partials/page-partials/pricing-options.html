@@ -115,23 +115,26 @@
     <div class="row pricing hidden-xs" ng-repeat="offer in offers" ng-class="{'last':$last}">
       <div class="col-sm-2"><h4>{{offer.label}}</h4></div>
       <div class="col-sm-5">
-        <div class="offer-box" vertilize>
+        <div class="offer-box">
+          <div vertilize>
           <span class="offer-spacing" ng-if="!offer.freeLink"></span>
           <p>{{offer.free}}</p>
           <span class="offer-action" ng-if="offer.freeLink">
             <a class="btn btn-primary" target="new" href="{{offer.freeLink}}"><span style="background-image: url('images/logos/icon-{{offer.freeButtonClass}}.png')" class="icon-{{offer.freeButtonClass}}"></span>{{offer.freeButton}}</a>
           </span>
+          </div>
         </div><!--offer-box-->
       </div>
       <div class="col-sm-5">
-        <div class="offer-box premium" vertilize>
+        <div class="offer-box premium">
+          <div vertilize>
           <span class="offer-spacing" ng-if="!offer.premiumLink"></span>
           <p>{{offer.premium}} <span>{{offer.price}}</span></p>
 
           <span class="offer-action" ng-if="offer.premiumLink">
             <a class="btn btn-primary" target="new" href="{{offer.premiumLink}}"><span style="background-image: url('images/logos/icon-{{offer.premiumButtonClass}}.png')" class="icon-{{offer.premiumButtonClass}}"></span>{{offer.premiumButton}}</a>
           </span>
-          
+          </div>
         </div><!--offer-box-->
       </div>
     </div>
