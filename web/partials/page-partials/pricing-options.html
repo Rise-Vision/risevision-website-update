@@ -21,7 +21,7 @@
       free:'Host media on your servers.',
       premium:'Host media on Rise Storage.',
       price:'$10 per month.',
-      premiumLink:'https://storage.risevision.com/',
+      premiumLink:'https://store.risevision.com/product/24/rise-storage',
       premiumButton:'Buy',
       premiumButtonClass:'storage',
       freeButton:''
@@ -31,8 +31,8 @@
       free:'Text, Image, Video, HTML, Spreadsheet, RSS and more...',
       premium:'Licensed News, Weather, Sports, Stocks and more...',
       price:'',
-      freeLink:'https://store.risevision.com/',
-      premiumLink:'https://store.risevision.com/',
+      freeLink:'https://store.risevision.com/?cat=Content',
+      premiumLink:'https://store.risevision.com/?cat=Content',
       premiumButton:'Browse',
       freeButton:'Browse'
       },
@@ -41,8 +41,8 @@
       free:'Getting Started Webinar',
       premium:'Private One-On-One Training',
       price:'',
-      freeLink:'webinars.html',
-      premiumLink:'https://store.risevision.com/',
+      webinarLink:'/webinar',
+      premiumLink:'https://store.risevision.com/?cat=Training',
       premiumButton:'Browse',
       freeButton:'Sign Up'
       },
@@ -52,7 +52,7 @@
       premium:'Priority Support',
       price:'',
       freeLink:'https://community.risevision.com/',
-      premiumLink:'https://support.risevision.com/',
+      premiumLink:'https://store.risevision.com/?cat=Support',
       premiumButton:'Buy',
       premiumButtonClass:'support',
       freeButton:'Join',
@@ -63,7 +63,7 @@
       free:'Templates to get started.',
       premium:'Graphic & Web Design',
       price:'',
-      premiumLink:'https://store.risevision.com/',
+      premiumLink:'https://store.risevision.com/?cat=Design%20Services',
       premiumButton:'Browse',
       freeButton:''
       }
@@ -75,7 +75,7 @@
     <div class="offer-header">
       <h3 class="visible-xs">Free</h3> 
       <h3 class="hidden-xs">Free</h3>
-      <p>Free? Really? Yes, no bait and switch, you can use our digital signage platform for nothing, but you will need to host your own video and image files.</p>  
+     <!--  <p>Free? Really? Yes, no bait and switch, you can use our digital signage platform for nothing, but you will need to host your own video and image files.</p>  --> 
     </div><!--content-box--> 
         <div class="visible-xs">
           <div ng-repeat="offer in offers" ng-class="{'last':$last}">
@@ -95,7 +95,7 @@
             <h3 class="visible-xs">Premium <span>(How we make money)</span></h3>  
             <h3 class="hidden-xs">Premium</h3> 
             
-            <p>How do we make money? We sell optional Premium products and services and we want you to buy licensed content, media players, and anything else digital signage that you might need from our Store. That's how we keep the lights on.</p>
+           <!--  <p>How do we make money? We sell optional Premium products and services and we want you to buy licensed content, media players, and anything else digital signage that you might need from our Store. That's how we keep the lights on.</p> -->
         </div><!--content-box-->
         <div class="visible-xs">
           <div ng-repeat="offer in offers" ng-class="{'last':$last}">
@@ -120,6 +120,11 @@
           <p>{{offer.free}}</p>
           <span class="offer-action" ng-if="offer.freeLink">
             <a class="btn btn-primary" target="new" href="{{offer.freeLink}}"><span style="background-image: url('images/logos/icon-{{offer.freeButtonClass}}.png')" class="icon-{{offer.freeButtonClass}}"></span>{{offer.freeButton}}</a>
+          </span>
+
+ <!-- Added the following code in as a solution to opening all links in a new tab. The 'webinar' link should open in the same tab. Not sure if this is the correct way -->
+          <span class="offer-action" ng-if="offer.webinarLink">
+            <a class="btn btn-primary" href="{{offer.webinarLink}}"><span style="background-image: url('images/logos/icon-{{offer.freeButtonClass}}.png')" class="icon-{{offer.freeButtonClass}}"></span>{{offer.freeButton}}</a>
           </span>
         </div><!--offer-box-->
       </div>
