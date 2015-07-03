@@ -75,7 +75,6 @@
     <div class="offer-header">
       <h3 class="visible-xs">Free</h3> 
       <h3 class="hidden-xs">Free</h3>
-     <!--  <p>Free? Really? Yes, no bait and switch, you can use our digital signage platform for nothing, but you will need to host your own video and image files.</p>  --> 
     </div><!--content-box--> 
         <div class="visible-xs">
           <div ng-repeat="offer in offers" ng-class="{'last':$last}">
@@ -94,8 +93,6 @@
             <div class="premium-badge"></div>
             <h3 class="visible-xs">Premium <span>(How we make money)</span></h3>  
             <h3 class="hidden-xs">Premium</h3> 
-            
-           <!--  <p>How do we make money? We sell optional Premium products and services and we want you to buy licensed content, media players, and anything else digital signage that you might need from our Store. That's how we keep the lights on.</p> -->
         </div><!--content-box-->
         <div class="visible-xs">
           <div ng-repeat="offer in offers" ng-class="{'last':$last}">
@@ -115,7 +112,8 @@
     <div class="row pricing hidden-xs" ng-repeat="offer in offers" ng-class="{'last':$last}">
       <div class="col-sm-2"><h4>{{offer.label}}</h4></div>
       <div class="col-sm-5">
-        <div class="offer-box" vertilize>
+        <div class="offer-box">
+          <div vertilize>
           <span class="offer-spacing" ng-if="!offer.freeLink"></span>
           <p>{{offer.free}}</p>
           <span class="offer-action" ng-if="offer.freeLink">
@@ -126,17 +124,19 @@
           <span class="offer-action" ng-if="offer.webinarLink">
             <a class="btn btn-primary" href="{{offer.webinarLink}}"><span style="background-image: url('images/logos/icon-{{offer.freeButtonClass}}.png')" class="icon-{{offer.freeButtonClass}}"></span>{{offer.freeButton}}</a>
           </span>
+          </div>
         </div><!--offer-box-->
       </div>
       <div class="col-sm-5">
-        <div class="offer-box premium" vertilize>
+        <div class="offer-box premium">
+          <div vertilize>
           <span class="offer-spacing" ng-if="!offer.premiumLink"></span>
           <p>{{offer.premium}} <span>{{offer.price}}</span></p>
 
           <span class="offer-action" ng-if="offer.premiumLink">
             <a class="btn btn-primary" target="new" href="{{offer.premiumLink}}"><span style="background-image: url('images/logos/icon-{{offer.premiumButtonClass}}.png')" class="icon-{{offer.premiumButtonClass}}"></span>{{offer.premiumButton}}</a>
           </span>
-          
+          </div>
         </div><!--offer-box-->
       </div>
     </div>
